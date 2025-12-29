@@ -13,8 +13,8 @@ const StreetViewModal: React.FC<StreetViewModalProps> = ({ lat, lng, onClose }) 
     const [isDragging, setIsDragging] = useState(false);
     const dragStartRef = useRef<{ x: number, y: number } | null>(null);
 
-    // Prioritize a specific Google Maps key, otherwise fall back to the main API_KEY
-    const mapsKey = process.env.GOOGLE_MAPS_API_KEY || process.env.API_KEY;
+    // Get Google Maps API key from environment
+    const mapsKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
     // Embed URL
     const src = `https://www.google.com/maps/embed/v1/streetview?key=${mapsKey}&location=${lat},${lng}&heading=0&pitch=0&fov=90`;
