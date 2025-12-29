@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Tell Netlify that these environment variables are meant for client-side use
+# They will be embedded in the JavaScript bundle (this is expected and safe
+# as long as you configure API key restrictions in Google Cloud Console)
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "VITE_GEMINI_API_KEY,VITE_GOOGLE_MAPS_API_KEY"
