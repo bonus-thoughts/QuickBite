@@ -1,5 +1,7 @@
 # QuickBite - Pattern Monitor
 
+> 🚀 **[View Live Demo](https://quickbite-pattern.netlify.app)** | 📖 [Documentation](#setup-instructions) | 🐛 [Report Issues](https://github.com/bonus-thoughts/QuickBite/issues)
+
 A geospatial intelligence application for visualizing and analyzing movement patterns using interactive mapping, AI-powered analysis, and Street View integration.
 
 ![Pattern Monitor Demo](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
@@ -84,22 +86,27 @@ The app will be available at `http://localhost:3000`
 
 ## Deployment
 
-### Deploy to Vercel (Recommended)
+### Live Demo
+This project is deployed on Netlify: **[quickbite-pattern.netlify.app](https://quickbite-pattern.netlify.app)**
 
+### Deploy Your Own
+
+#### Netlify
+1. Push your code to GitHub
+2. Go to [Netlify](https://netlify.com) and import your repository
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+5. Add environment variables in Netlify settings:
+   - `GEMINI_API_KEY`
+   - `GOOGLE_MAPS_API_KEY`
+
+#### Vercel (Alternative)
 1. Push your code to GitHub
 2. Go to [Vercel](https://vercel.com) and import your repository
 3. Add environment variables in Vercel project settings:
    - `GEMINI_API_KEY`
    - `GOOGLE_MAPS_API_KEY`
 4. Deploy!
-
-### Deploy to Netlify
-
-1. Push your code to GitHub
-2. Go to [Netlify](https://netlify.com) and import your repository
-3. Build command: `npm run build`
-4. Publish directory: `dist`
-5. Add environment variables in Netlify settings
 
 ## Project Structure
 
