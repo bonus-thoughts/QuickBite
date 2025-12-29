@@ -1,0 +1,5 @@
+{
+  "name": "QuickBite - Pattern Monitor",
+  "description": "Pattern-of-life visualization tool. Reconstructs traveled routes from temporal location data and identifies potential stops and dwell locations using road network analysis.",
+  "requestFramePermissions": []
+}
